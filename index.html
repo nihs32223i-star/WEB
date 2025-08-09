@@ -1,0 +1,51 @@
+
+
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <title>لوحة تتبّع المناديب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.css" rel="stylesheet" />
+  <script src="https://unpkg.com/maplibre-gl@3.6.1/dist/maplibre-gl.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>لوحة تتبّع المناديب</h1>
+    <div id="status">الحالة: <span id="sysStatus">—</span></div>
+  </header>
+
+  <main>
+    <section class="controls">
+      <label>من:
+        <input type="datetime-local" id="from" />
+      </label>
+      <label>إلى:
+        <input type="datetime-local" id="to" />
+      </label>
+      <label>مندوب:
+        <input id="agentId" placeholder="A1" />
+      </label>
+      <label>تنعيم:
+        <select id="smooth">
+          <option value="ma">MA</option>
+          <option value="off">Off</option>
+        </select>
+      </label>
+      <button id="play">تشغيل المسار</button>
+      <button id="refreshLive">تحديث المباشر</button>
+    </section>
+
+    <section class="mapWrap">
+      <div id="map"></div>
+      <div id="sidebar">
+        <h3>المندوبون (مباشر)</h3>
+        <ul id="agents"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+* { box-sizing: border-box; }
+body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background:#0b1020; color:#f0f3ff; }
+header { padding:12px 16px; background:#121937; display:flex; align-items:center; justify-content:space-between; border-bottom:1px solid #243; }
+.controls { display:flex; gap:12px; padding:12px 16px; background:#0f1630; border-bottom:1px solid #243; flex-wrap: wrap; }
+.controls input, .controls select, .controls button { padding:8px; background:#1a2145; color:#fff; border:1px solid #2a356c; border-radius:8px; }
+.controls button { cursor:pointer; }
+.mapWrap { display:flex; height: calc(100vh - 120px); }
+#map { flex: 1; }
+#sidebar { width: 340px; border-left:1px solid #243; padding:12px; background:#0f1630; overflow:auto; }
+#agents { list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:8px; }
+.badge { display:inline-block; padding:2px 8px; border-radius:999px; border:1px solid #456; font-size:12px; }
+.green { background:#0a3; }
+.gray { background:#555; }
+.red { background:#a00; }
+li.agent { border:1px solid #2a356c; border-radius:12px; padding:8px; }
+h1 { font-size:18px; margin:0; }
+#status { font-size:14px; }
