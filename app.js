@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:8080';
+const API_BASE = 'https://test-1ugg.onrender.com';
 
 const API = (path)=> fetch(`${API_BASE}${path}`).then(r=>r.json());
 
